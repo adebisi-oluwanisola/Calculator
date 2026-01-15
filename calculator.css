@@ -1,0 +1,92 @@
+body{
+display: flex;
+background-color: rgb(67, 44, 33);
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.Calculator{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+
+}
+#display{
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: rgb(3, 3, 3);
+   background-color: rgb(237, 232, 224);
+}
+.operation{
+    background-color: rgb(190, 114, 48);
+    font-size: 20px;
+}
+
+.inside{
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 177px;
+
+}
+.basic{
+   
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 20px;
+   justify-content: center;
+   width: 100%;
+   box-sizing: border-box;
+
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border-style: hidden;
+    background-color: rgb(237, 232, 224);
+    padding: 0px;
+    border-radius: 15px;
+    border-color: rgb(203, 206, 210);
+}
+button:active{
+    transform: scale(0.95);
+}
+
+select{
+    background-color: rgb(237, 232, 224);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.scientific {
+    display: none;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    
+}
+
+.basic,.scientific{
+    transition: 0.35s ease,opacity 0.35s ease;
+}
+.buttons-wrapper{
+position: relative;
+ overflow:hidden;
+ max-height: 360px;
+ overflow-y: auto;
+}
+
+
+
+
