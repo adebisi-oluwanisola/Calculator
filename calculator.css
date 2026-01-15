@@ -45,6 +45,7 @@ height: 100vh;
    justify-content: center;
    width: 100%;
    box-sizing: border-box;
+   color:black;
 
 }
 
@@ -74,7 +75,7 @@ select{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    
+    color:black;
 }
 
 .basic,.scientific{
@@ -86,6 +87,7 @@ position: relative;
  max-height: 360px;
  overflow-y: auto;
 }
+
 
 
 
