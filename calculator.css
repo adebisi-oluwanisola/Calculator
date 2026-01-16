@@ -20,6 +20,8 @@ height: 100vh;
     font-size: large;
     text-align: right;
     margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
     border-radius: 10px;
     border-color: rgb(3, 3, 3);
    background-color: rgb(237, 232, 224);
@@ -72,10 +74,9 @@ select{
 .scientific {
     display: none;
     grid-column: span 4;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    color:black;
+   color:black;
 }
 
 .basic,.scientific{
@@ -86,8 +87,8 @@ position: relative;
  overflow:hidden;
  max-height: 360px;
  overflow-y: auto;
+ scrollbar-color: rgb(22, 22, 22);
 }
-
 
 
 
